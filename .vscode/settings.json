@@ -11,5 +11,6 @@
     "**/.*",
     "**/base/**",
     "**/sections/**"
-  ]
+  ],
+  "liveSassCompile.settings.watchOnLaunch": true
 }
