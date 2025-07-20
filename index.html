@@ -1,25 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drone Destroyer!</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/main.css">
 </head>
+
 <body>
     <header class="header">
         <div class="header__box">
-        <h1 class="header__title"><img src="#" alt="Drone Destroyer Logo" class="header__image">Drone Destroyer</h1>
-        <input type="checkbox" name="header__checkbox-laungage" id="header__checkbox-laungage">
-        <label for="header__checkbox-laungage" class="header__label-laungage-changer"></label>
+            <h1 class="header__title"><img src="" alt="Drone Destroyer Logo" class="header__image">Drone Destroyer</h1>
+            <input type="checkbox" name="header__checkbox-laungage" id="header__checkbox-laungage">
+            <label for="header__checkbox-laungage" class="header__label-laungage-changer"></label>
         </div>
         <p class="header__text"></p>
     </header>
     <main class="main">
         <section class="hero">
-            <h2 class="hero__title">Welcome to Drone Destroyer!</h2>
-            <button type="button">Start The Game</button>
+            <button type="button" class="hero__button">Start The Game</button>
+            <h2 class="hero__subtitle">Mods</h2>
+            <ul class="hero__list">
+                <li class="hero__item"><button type="button" class="hero__btn">Coming Soon!</button></li>
+                <li class="hero__item"><button type="button" class="hero__btn">Coming Soon!</button></li>
+                <li class="hero__item"><button type="button" class="hero__btn">Coming Soon!</button></li>
+            </ul>
         </section>
         <section class="load">
             <h2 class="load__title">Loading...</h2>
@@ -27,8 +36,14 @@
         </section>
     </main>
     <footer class="footer">
-        <button type="button" class="footer__button-command-d"><a href="" class="footer__link-command-d">Support The Developers!</a></button>
-        <button type="button" class="footer__button-ukraine-d"><a href="" class="footer__link-ukraine-d">Support Ukraine</a></button>
+        <div class="footer__box">
+            <button type="button" class="footer__button-command-d"><a href="" class="footer__link-command-d"
+                    target="_blank">Support The Developers!</a></button>
+            <button type="button" class="footer__button-ukraine-d"><a href="https://u24.gov.ua/uk/donate/humanitarian"
+                    class="footer__link-ukraine-d" target="_blank">Support Ukraine!</a></button>
+        </div>
+        <p class="footer__text">Telegram channel<img src="" alt="Telegram icon" class="footer__image"></p>
     </footer>
 </body>
+
 </html>
