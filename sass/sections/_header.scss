@@ -1,0 +1,65 @@
+.header {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    .game__status {
+        font-size: 12px;
+        margin-bottom: 25px;
+    }
+
+    &__box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    &__title {
+        font-size: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    &__image {
+        border-radius: 50%;
+    }
+
+    #header__checkbox-laungage {
+        display: none;
+    }
+
+    &__label-laungage-changer {
+        margin-top: 5px;
+        width: 45px;
+        height: 20px;
+        display: block;
+        border-radius: 11px;
+        background: var(--white-color);
+        cursor: pointer;
+        position: relative;
+        transition: all 0.3s;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            left: 0;
+            background-image: url("../../img/uk-flag.png");
+            background-size: 15px;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: all 0.3s;
+        }
+    }
+    #header__checkbox-laungage:checked + .header__label-laungage-changer {
+
+        &::after {
+            left: 24.5px;
+            background-image: url("../../img/ua-flag.png");
+        }
+    }
+}

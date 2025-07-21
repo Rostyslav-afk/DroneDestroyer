@@ -52,56 +52,97 @@ a {
   text-decoration: none;
 }
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+:root {
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --body-bg-color: #17202a;
+  --alfa-slab-one: "Alfa Slab One";
+  --montserrat: "Montserrat";
+  --funnel-display: "Funnel Display";
+  --roboto: "Roboto";
 }
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
+.container {
+  width: 280px;
+  padding-right: 8px;
+  padding-left: 8px;
+  outline: 1px solid red;
+  margin: 0 auto;
 }
 
+@media screen and (min-width: 752px) {
+  .container {
+    width: 568px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+@media screen and (min-width: 1264px) {
+  .container {
+    width: 1000px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
 body {
-  line-height: 1;
+  background-color: var(--body-bg-color);
+  color: var(--white-color);
+  font-family: var(--funnel-display);
 }
 
-ol, ul {
-  list-style: none;
+.header {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 30px;
 }
-
-blockquote, q {
-  quotes: none;
+.header .game__status {
+  font-size: 12px;
+  margin-bottom: 25px;
 }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
+.header__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.header__title {
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.header__image {
+  border-radius: 50%;
+}
+.header #header__checkbox-laungage {
+  display: none;
+}
+.header__label-laungage-changer {
+  margin-top: 5px;
+  width: 45px;
+  height: 20px;
+  display: block;
+  border-radius: 11px;
+  background: var(--white-color);
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s;
+}
+.header__label-laungage-changer::after {
   content: "";
-  content: none;
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  background-image: url("../../img/uk-flag.png");
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 0.3s;
 }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-a {
-  text-decoration: none;
+.header #header__checkbox-laungage:checked + .header__label-laungage-changer::after {
+  left: 24.5px;
+  background-image: url("../../img/ua-flag.png");
 }/*# sourceMappingURL=main.css.map */
